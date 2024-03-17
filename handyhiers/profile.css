@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+}
+
+nav {
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    background-color: #004BA8;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+
+nav img{
+    width: 9vh;
+}
+
+.card {
+    background-color: #d9d9d9;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5.4vh;
+}
+
+.card p {
+    display: flex;
+    row-gap: 10px;
+}
+
+.card img {
+    width: 28.6vh;
+    margin-bottom: 7.5vh;
+}
+
+.info {
+    font-family: "League Spartan", sans-serif;
+    display: grid;
+    grid-gap: 30px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.info p{
+    display: flex;
+}
+
+.info span{
+    color: #004BA8;
+    margin-left: 10px;
+}
+.card a button{
+    width: 100px; 
+    height: 40px;
+    background-color: #004BA8;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 1s;
+    border-radius: 60px;
+}
+.card a button:hover{
+    width: 103px; 
+    height: 43px;
+    background-color: white;
+    color: #004BA8;
+}

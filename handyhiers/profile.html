@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/logo (2).png" > 
+    <link rel="stylesheet" href="profile.css">
+    <title>Handyhiers</title>
+</head>
+
+<body>
+    <nav>
+        <div id="display_image"></div>
+        <div class="knowlaege">
+            <h2>WorkerName:<span id="name"></span></h2>
+            <h2>ID:<span id="code"></span></h2>
+        </div>
+    </nav>
+    <div class="card">
+        <img src="./undraw_male_avatar_g98d.svg" alt="" id="img">
+        <div class="info">
+            <p class="name">Name:<span id="nama"></span></p>
+            <p class="job">Job: <span id="job"></span></p>
+            <p class="Years">Years of Exp.: <span id="years"></span> </p>
+            <p class="Cv">Cv: <span id="cv"></span> </p>
+            <p>payment method:<span id="cash"></span></p>
+        </div>
+        <a href="/home page worker/index.html"><button>Next</button></a>
+    </div>
+    <script>
+        const img = localStorage.getItem('userImage')
+        const names = localStorage.getItem('firstName')
+        const job = localStorage.getItem('job')
+        const phone = localStorage.getItem('Cash')
+        const national = localStorage.getItem('national')
+        const cv = localStorage.getItem("about")
+        const Exp = localStorage.getItem('Exp')
+        document.getElementById("img").textContent = img
+        document.getElementById("name").textContent = names
+        document.getElementById("nama").textContent = names
+        document.getElementById("job").textContent = job
+        document.getElementById("cash").textContent = phone
+        document.getElementById("cv").textContent = cv
+        document.getElementById("years").textContent = Exp
+        document.getElementById("code").textContent = generateNumericId(8)
+        function generateNumericId(length) {
+            let result = '';
+            const characters = '0123456789';
+            const charactersLength = characters.length;
+            for (let i =  0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+        }
+    </script>
+</body>
+
+</html>

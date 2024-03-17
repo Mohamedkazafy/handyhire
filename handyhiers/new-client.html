@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="new_style.css">
+</head>
+
+<body>
+    <div id="page" class="site">
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo"><a href="#"><span>Handy</span>Hire</a></div>
+                    <ul class="progrees-steps">
+                        <li class="step active">
+                            <span>1</span>
+                            <p>Personal <br> <span>25 secs to complete</span></p>
+                        </li>
+                        <li class="step">
+                            <span>2</span>
+                            <p>Contact<br> <span>60 secs to complete</span></p>
+                        </li>
+                        <li class="step">
+                            <span>3</span>
+                            <p>Security <br> <span>30 secs to complete</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <form action="">
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                        <h2>Personal Information</h2>
+                        <p>Enter your personal information correctly</p>
+                        <div>
+                            <label>First Name</label>
+                            <input type="text" placeholder="e.g John">
+                        </div>
+                        <div>
+                            <label>last Name</label>
+                            <input type="text" placeholder="e.g Doe">
+                        </div>
+                        <div class="birth">
+                            <label>Date of Birth</label>
+                            <div class="grouping">
+                                <input type="number" pattern="[0-9]" name="day" velue="" min="0" max="31"
+                                    placeholder="DD" id="day">
+                                <input type="number" pattern="[0-9]" name="month" velue="" min="0" max="12"
+                                    placeholder="MM" id="month">
+                                <input type="number" pattern="[0-9]" name="year" velue="" min="0" max="2050"
+                                    placeholder="YYYY" id="year">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Contact</h2>
+                        <div>
+                            <label>Phone</label>
+                            <input type="number" placeholder="x62xxxxxx">
+                        </div>
+                        <div>
+                            <label>Adress</label>
+                            <input type="text" placeholder="street Address">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="App, suite, Buliding">
+                        </div>
+                        <div>
+                            <label>City</label>
+                            <input type="text" placeholder="City">
+                        </div>
+                        <div>
+                            <label>Country</label>
+                            <select name="country" id="country">
+                                <option value="EG">مصر (Egypt)</option>
+                                <option value="SA">السعودية (Saudi Arabia)</option>
+                                <option value="AE">الإمارات العربية المتحدة (United Arab Emirates)</option>
+                                <option value="IQ">العراق (Iraq)</option>
+                                <option value="JO">الأردن (Jordan)</option>
+                                <option value="OM">عُمان (Oman)</option>
+                                <option value="KW">الكويت (Kuwait)</option>
+                                <option value="BH">البحرين (Bahrain)</option>
+                                <option value="QA">قطر (Qatar)</option>
+                                <option value="YE">اليمن (Yemen)</option>
+                                <option value="LB">لبنان (Lebanon)</option>
+                                <option value="SY">سوريا (Syria)</option>
+                                <option value="TN">تونس (Tunisia)</option>
+                                <option value="MA">المغرب (Morocco)</option>
+                                <option value="DZ">الجزائر (Algeria)</option>
+                                <option value="LY">ليبيا (Libya)</option>
+                                <option value="MR">موريتانيا (Mauritania)</option>
+                                <option value="SD">السودان (Sudan)</option>
+                                <option value="SO">الصومال (Somalia)</option>
+                                <option value="DJ">جيبوتي (Djibouti)</option>
+                                <option value="CO">جزر القمر (Comoros)</option>
+                            </select>
+                        </div>
+                    </div>
+                        <div class="form-three form-step">
+                            <div class="bg-svg"></div>
+                            <h2>Security</h2>
+                            <div>
+                                <label>Email</label>
+                                <input type="email" placeholder="anyemail@gmail.com">
+                            </div>
+                            <div>
+                                <label>Username</label>
+                                <input type="text" placeholder="your username">
+                            </div>
+                            <div>
+                                <label>Password</label>
+                                <input type="password" placeholder="password" id="pass">
+                            </div>
+                            <div>
+                                <input type="password" placeholder="confirm password" id="com_pass">
+                            </div>
+                            <!-- <div class="checkBox">
+                                <input type="checkbox">
+                                <label>you accept for all policy documentaion</label>
+
+                            </div> -->
+                        </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" disabled>prev step</button>
+                        <button type="button" class="btn-next">Next Step</button>
+                        <a href="index.html"><button type="button" class="btn-submit" disabled>Submit</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="new_script.js"></script>
+</body>
+
+</html>

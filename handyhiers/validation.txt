@@ -1,0 +1,2 @@
+1- make site resonsive
+2- make the validation for the forms

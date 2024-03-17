@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+text-align: center;
+text-decoration: none;
+color:#000016;
+font-weight: 700;
+font-size: 1.8em;
+
+}
+nav {
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    color: #004BA8;
+    margin: 15px 0 0 15px;
+
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    font-family: "Merriweather", serif;;
+}
+
+.container{
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+.container div{
+    background-color: #D9D9D9;
+    border-radius: 32px;
+    width: 66vh;
+    height: 30.4vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin:60px 0 0 0;
+    cursor: pointer;
+}
+
+.container div img{
+    width: 34.5vh;
+    height: 26.8vh;
+    position: absolute;
+    bottom: -15px;
+    left: 2px;
+}
+.container div h3{
+    padding: 15px;
+}
+
+.container div:hover{
+    background-color: #67B8C3;
+    transition: .5s ease-out;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.clients img{
+    margin-left: 5px;
+}
+@media screen and (max-width: 873px){
+    .container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+@media screen and (max-width: 500px){
+    .container div{
+        width: 370px;
+    }
+    .container div img{
+        width: 30.5vh;
+        height: 22.8vh;
+        bottom: -10px;
+    }
+}
+@media screen and (max-width: 280px){
+    .container div{
+        width: 280px;
+    }
+}

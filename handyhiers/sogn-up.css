@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.logo-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+text-align: center;
+text-decoration: none;
+color:#000016;
+font-weight: 700;
+font-size: 1.8em;
+
+}
+nav {
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    color: #004BA8;
+    margin: 15px 0 0 15px;
+
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;  
+}
+
+.collect form label {
+    display: block;
+}
+
+.collect form input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+.collect form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+#userImage{
+    border: none;
+}
+
+.collect form {
+    float: left;
+    font-family: "Lekton", sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    padding: 12px;
+    width: 80%;
+}
+
+#btn {
+    color: #fff;
+    background-color: #67B8C3;
+    border: none;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 17px;
+}
+textarea {
+    width:  300px; 
+    height:  150px; 
+    resize: none; 
+  }
+  
+
+#btn:hover{
+    background-color: #004BA8;
+    transition: 0.5s ease;
+}
+
+.card {
+    background-color: #d9d9d9;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.card p {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card img {
+    width: 28.6vh;
+}
+
+.info {
+    font-family: "League Spartan", sans-serif;
+    display: grid;
+    grid-gap: 30px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 873px){
+    .container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{display: none ;}
+}
+@media screen and (max-width: 500px){
+    .container div{
+        width: 370px;
+    }
+    .container div img{
+        width: 30.5vh;
+        height: 22.8vh;
+        bottom: -10px;
+    }
+    .collect form{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .collect form input{
+        width: 80%;
+    }
+    .collect form textarea {
+        width: 80%;
+    }
+    .card{display: none ;}
+}
+@media screen and (max-width: 280px){
+    .container div{
+        width: 270px;
+    }
+    .container div img{
+        width: 30.5vh;
+        height: 22.8vh;
+        bottom: -10px;
+    }
+    .collect form{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .collect form input{
+        width: 80%;
+    }
+    .collect form textarea {
+        width: 80%;
+    }
+    .card{display: none ;}
+}

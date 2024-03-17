@@ -1,0 +1,24 @@
+to create database using xammp 
+CREATE DATABASE LoginSystem;
+
+
+to create table
+CREATE TABLE IF NOT EXISTS `users` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(50) NOT NULL,
+ `email` varchar(50) NOT NULL,
+ `password` varchar(50) NOT NULL,
+ `create_datetime` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+);
+
+
+
+
+to run project open terminal and write this command 
+php -S localhost:8000
+
+
+and to active database and local host you have to open exampp and click on 
+apache (start)
+mysql(satrt)=>(admin)

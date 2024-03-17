@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background-color: #bee0ee; */
+}
+.logo-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+text-align: center;
+text-decoration: none;
+color:#000016;
+font-weight: 700;
+font-size: 1.8em;
+
+}
+nav{
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    color: #004BA8;
+    margin: 15px 0 0 15px;
+    
+}
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.container{
+    background-color:#D9d9d9 ;
+    width: 95%;
+    display: flex;
+    border-radius: 0 155px 5px 0;
+    height: 65.22vh;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    padding: 1vh 0 0 0;
+}
+  
+.workers{
+    background-color: #9BCBE0;
+    width: 60%;
+    padding: 12px 0 0 0 ;
+    border-radius: 0 140px 5px 0;
+    position: relative;
+}
+.workers img{
+    height: 85%;
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+}
+
+.info *{
+    margin-bottom: 10px;
+}
+.info input{
+    border-radius: 12px;
+    border: none;
+    padding: 7px;
+    outline: none;
+}
+.info button{
+    padding: 10px;
+    color: #fff;
+    background-color: #004BA8;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: #fffefe;
+}
+@media screen and (max-width: 1091px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 140px 0px 5px 5px;
+    }
+    .info {
+        min-width: 50vh;
+    }
+    .workers{
+        height: 100%;
+        width: 100%;
+        border-radius: 140px 10px 100px 0px;
+        position: relative;
+    }
+    .workers img{
+        width: 85%;
+        height: 85%;
+        position: absolute;
+        bottom: 0;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .container {
+        height: 500px;
+    }
+    .workers{
+        height: 90%;
+        width: 100%;
+        border-radius: 140px 10px 100px 0px;
+        position: relative;
+    }
+    .workers img{
+        height: 90%;
+        position: absolute;
+        bottom: 0;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .workers{
+        height: 90%;
+        width: 100%;
+        border-radius: 140px 10px 100px 0px;
+        position: relative;
+    }
+    .workers img{
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    .container {
+        width: 100%;
+        margin: 3px;
+    }
+    .info *{
+        font-size: large;
+    }
+    .workers img{
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+    }
+  }
